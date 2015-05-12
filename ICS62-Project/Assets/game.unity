@@ -108,23 +108,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -.707106829
+      value: .0557866618
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: .704902709
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: .704902828
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .707106709
+      value: -.0557866506
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 636b3b394e3065b428ee4c4e03cc5b36, type: 3}
       propertyPath: m_Name
@@ -182,6 +182,56 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ba5af154e86754346a899b77614d00c6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f620b5d7627873f4fadbb8d7f0d37fe4, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1001 &458612800
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.82999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.6900005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -.999891281
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -.0147477258
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_Name
+      value: m_eigththnote
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f6e6eb633a834242978cd55fba0a9e2, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ec18d7c7aba3ff948865c24a58faeb2d, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &535222160
 GameObject:
@@ -266,7 +316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &744934138
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +389,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1593469060
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,4 +449,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
