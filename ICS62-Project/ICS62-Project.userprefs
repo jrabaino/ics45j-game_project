@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\eventPlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\onGuiLessonPickUp.cs">
     <Files>
-      <File FileName="..\..\Roll-A-Ball\Assets\Scripts\PlayerController.cs" Line="19" Column="23" />
-      <File FileName="Assets\Scripts\eventPlayerController.cs" Line="9" Column="3" />
-      <File FileName="Assets\Scripts\onGuiLessonPickUp.cs" Line="13" Column="4" />
+      <File FileName="Assets\Scripts\eventPlayerController.cs" Line="13" Column="14" />
+      <File FileName="Assets\Scripts\onGuiLessonPickUp.cs" Line="29" Column="38" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="9" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
