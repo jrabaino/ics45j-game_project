@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\onGuiLessonPickUp.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Temp\ParsedCombinations-Standard.shader">
     <Files>
-      <File FileName="Assets\Scripts\eventPlayerController.cs" Line="13" Column="14" />
-      <File FileName="Assets\Scripts\onGuiLessonPickUp.cs" Line="29" Column="38" />
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="9" Column="13" />
+      <File FileName="Temp\ParsedCombinations-Standard.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
