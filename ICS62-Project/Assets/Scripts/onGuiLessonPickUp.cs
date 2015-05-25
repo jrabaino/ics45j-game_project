@@ -25,7 +25,7 @@ public class onGuiLessonPickUp : MonoBehaviour {
 	}
 	public static void lesson1(Texture imgtexture){
 		GUI.Box (new Rect (50, 50, 700, 500), "Lesson 1: Type of Musical Notes");
-		GUI.Label(new Rect (100, 200, 100, 100), imgtexture);
+		GUI.DrawTexture(new Rect (100, 225, 375, 205), imgtexture);
 		GUI.Label(new Rect (100, 100, 300, 300), "Music is written using different types of notes. " +
 		          "When placed on sheet music, notes represent which tone to play and for how long. " +
 		          "Visually, notes are a combination of two shapes - the head, which is shaped like an " +
