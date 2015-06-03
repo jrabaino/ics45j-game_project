@@ -10,16 +10,7 @@ public class onGuiLessonPickUp : MonoBehaviour {
 	private static string answer;
 	private static string question;
 	public static List<string> questions = new List<string>();
-
-
-	// Use this for initialization
-	void Start () {
-		questions.Add ("eighth");
-		questions.Add ("quarter");
-		questions.Add ("half");
-		questions.Add ("dotted_half");
-		questions.Add ("whole");
-	}
+	
 
 	// Update is called once per frame
 	void Update(){
@@ -53,72 +44,76 @@ public class onGuiLessonPickUp : MonoBehaviour {
 		}
 	}
 
+	public static void LessonOnePlan(Texture eighth, Texture quarter, Texture half, Texture dotted_half, Texture whole)
+	{
+
+		while (health > 0) {
+			questions.Add ("eighth");
+			questions.Add ("quarter");
+			questions.Add ("half");
+			questions.Add ("dotted_half");
+			questions.Add ("whole");
+			Lesson1Plan (eighth, quarter, half, dotted_half, whole);
+			break;
+		}
+	}
+
 	public static void Lesson1Plan(Texture eighth, Texture quarter, Texture half, Texture dotted_half, Texture whole)
 	{
-		if (tracker == true) 
-		{
+		if (tracker == true) {
 			question = questions [Random.Range (0, questions.Count)];
 			tracker = false;
 		}
-		
-		while (questions.Count>0) 
+		switch(question)
 		{
-			if (question == "eighth") 
-			{
-				GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the eighth note?");
-			} 
-			
-			else if (question == "quarter") 
-			{
-				GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the quarter note?");
-			} 
-			
-			else if (question == "half") 
-			{
-				GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the half note?");
-			} 
-			
-			else if (question == "dotted_half") 
-			{
-				GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the dotted half note?");
-			} 
-			
-			else if (question == "whole") 
-			{
-				GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the whole note?");
-			}
-			
-			if (GUI.Button (new Rect (Screen.width / 10, Screen.height / 2, 100, 100), eighth)) 
-			{
-				answer = "eighth";
-			} 
-			
-			else if (GUI.Button (new Rect (Screen.width / 10 * 3, Screen.height / 2, 100, 100), quarter)) 
-			{
-				answer = "quarter";
-			} 
-			
-			else if (GUI.Button (new Rect (Screen.width / 2, Screen.height / 2, 100, 100), half)) 
-			{
-				answer = "half";
-			} 
-			
-			else if (GUI.Button (new Rect (Screen.width / 10 * 7, Screen.height / 2, 100, 100), dotted_half)) 
-			{
-				answer = "dotted_half";
-			} 
-			
-			else if (GUI.Button (new Rect (Screen.width / 10 * 9, Screen.height / 2, 100, 100), whole)) 
-			{
-				answer = "whole";
-			} 
+		case "eighth":
+			GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the eighth note?");
+			break;
+		case "quarter":
+			GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the quarter note?");
+			break;
+		case "half":
+			GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the half note?");
+			break;
+		case "dotted_half":
+			GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the dotted half note?");
+			break;
+		case "whole":
+			GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 4, 500, 100), "Which note is the whole note?");
 			break;
 		}
-		
+
+			
+		if (GUI.Button (new Rect (Screen.width / 10, Screen.height / 2, 100, 100), eighth)) 
+		{
+				answer = "eighth";
+		}
+			
+		else if (GUI.Button (new Rect (Screen.width / 10 * 3, Screen.height / 2, 100, 100), quarter)) 
+		{
+			answer = "quarter";
+		} 
+			
+		else if (GUI.Button (new Rect (Screen.width / 2, Screen.height / 2, 100, 100), half)) 
+		{
+			answer = "half";
+		} 
+			
+		else if (GUI.Button (new Rect (Screen.width / 10 * 7, Screen.height / 2, 100, 100), dotted_half)) 
+		{
+			answer = "dotted_half";
+		} 
+			
+		else if (GUI.Button (new Rect (Screen.width / 10 * 9, Screen.height / 2, 100, 100), whole)) 
+		{
+			answer = "whole";
+		}
+
+
 		if (answer == question)
 		{
-			questions.Remove(question);
 			tracker = true;
+			questions.Remove(question);
 			health = health - 1;
 			if (health == 0)
 			{
@@ -126,7 +121,11 @@ public class onGuiLessonPickUp : MonoBehaviour {
 				PlayerMovement.MovementBool();
 			}
 		}
+
 	}
+	
+
+
 		
 }
 

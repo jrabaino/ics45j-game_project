@@ -10,6 +10,21 @@ public class eventPlayerController : MonoBehaviour {
 	public Texture half;
 	public Texture dotted_half;
 	public Texture whole;
+
+	public Texture imgTexture2;
+	public Texture treble;
+	public Texture bass;
+	public Texture staff;
+
+	public Texture imgTexture3;
+	public Texture A;
+	public Texture B;
+	public Texture C;
+	public Texture D;
+	public Texture E;
+	public Texture F;
+	public Texture G;
+
 	public GUIText lessonText;
 
 	void Start () {
@@ -23,16 +38,23 @@ public class eventPlayerController : MonoBehaviour {
 
 		}
 		if (onGuiLessonPickUp.plan) {
+			onGuiLessonPickUp.LessonOnePlan(eighth, quarter, half, dotted_half, whole);
+		}
 
-			onGuiLessonPickUp.questions.Add ("eighth");
-			onGuiLessonPickUp.questions.Add ("quarter");
-			onGuiLessonPickUp.questions.Add ("half");
-			onGuiLessonPickUp.questions.Add ("dotted_half");
-			onGuiLessonPickUp.questions.Add ("whole");
-			while (onGuiLessonPickUp.health > 0){
-				onGuiLessonPickUp.Lesson1Plan (eighth, quarter, half, dotted_half, whole);
-				break;
-			}
+		if (Lesson2.lesson2_show) {
+			Lesson2.lesson2_text (imgTexture2);
+		}
+
+		if (Lesson2.lesson2_plan) {
+			Lesson2.LessonTwoPlan (staff, treble, bass);
+		}
+
+		if (Lesson3.lesson3_show) {
+			Lesson3.lesson3_text (imgTexture3);
+		}
+
+		if (Lesson3.lesson3_plan) {
+			Lesson3.LessonThreePlan (A, B, C, D, E, F, G);
 		}
 	}
 
@@ -44,6 +66,8 @@ public class eventPlayerController : MonoBehaviour {
 			pickCount += 1;
 			PlayerMovement.MovementBool();
 			onGuiLessonPickUp.showInventory();
+			//Lesson2.showInventory();
+			//Lesson3.showInventory();
 
 		}
 	}
