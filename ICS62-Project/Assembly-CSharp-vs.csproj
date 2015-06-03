@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Spin.cs" />
      <Compile Include="Assets\Scripts\eventPlayerController.cs" />
      <Compile Include="Assets\Scripts\onGuiLessonPickUp.cs" />
+     <None Include="Assets\Imported Assets (Models, etc.)\Ornamental Flower Set\Shaders\Transparent-BumpSpecNoCull.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
