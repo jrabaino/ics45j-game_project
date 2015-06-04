@@ -25,20 +25,38 @@ public class eventPlayerController : MonoBehaviour {
 	public Texture F;
 	public Texture G;
 
-	public GUIText lessonText;
+	public Texture imgTexture4;
+	public Texture clefA;
+	public Texture clefB;
+	public Texture clefC;
+	public Texture clefD;
+	public Texture clefE;
+	public Texture clefF;
+	public Texture clefG;
+	public Texture clefMC;
+
+	public Texture imgTexture5;
+	public Texture isecond;
+	public Texture ithird;
+	public Texture ifourth;
+	public Texture ififth;
+	public Texture isixth;
+	public Texture iseventh;
+	public Texture ioctave;
+
 
 	void Start () {
 		pickCount = 0;
 	}
 	
 	void OnGUI(){
-		GUI.Label (new Rect (10, 10, 200, 50), "Lessons collected: " + pickCount.ToString()+" /10");
-		if (onGuiLessonPickUp.show) {
-			onGuiLessonPickUp.lesson1(imgTexture);
+		GUI.Label (new Rect (10, 10, 200, 50), "Lessons collected: " + pickCount.ToString () + " /5");
+		if (Lesson1.show) {
+			Lesson1.lesson1_text (imgTexture);
 
 		}
-		if (onGuiLessonPickUp.plan) {
-			onGuiLessonPickUp.LessonOnePlan(eighth, quarter, half, dotted_half, whole);
+		if (Lesson1.plan) {
+			Lesson1.LessonOnePlan (eighth, quarter, half, dotted_half, whole);
 		}
 
 		if (Lesson2.lesson2_show) {
@@ -56,6 +74,20 @@ public class eventPlayerController : MonoBehaviour {
 		if (Lesson3.lesson3_plan) {
 			Lesson3.LessonThreePlan (A, B, C, D, E, F, G);
 		}
+		if (Lesson4.lesson4_show) {
+			Lesson4.lesson4_text (imgTexture4);
+		}
+		
+		if (Lesson4.lesson4_plan) {
+			Lesson4.LessonFourPlan (clefA, clefB, clefC, clefD, clefE, clefF, clefG,clefMC);
+		}
+		if (Lesson5.lesson5_show) {
+			Lesson5.lesson5_text (imgTexture4);
+		}
+		
+		if (Lesson5.lesson5_plan) {
+			Lesson5.LessonFivePlan (isecond, ithird, ifourth, ififth, isixth, iseventh, ioctave);
+		}
 	}
 
 
@@ -63,12 +95,40 @@ public class eventPlayerController : MonoBehaviour {
 	{
 		if (other.CompareTag("Pickup")) {
 			other.gameObject.SetActive (false);
+
 			pickCount += 1;
 			PlayerMovement.MovementBool();
-			onGuiLessonPickUp.showInventory();
-			//Lesson2.showInventory();
-			//Lesson3.showInventory();
+			Lesson1.showInventory();
+			
 
+		}
+		else if (other.CompareTag("Pickup2")) {
+			other.gameObject.SetActive (false);
+			pickCount += 1;
+			PlayerMovement.MovementBool();
+			Lesson2.showInventory();
+			
+		}
+		if (other.CompareTag("Pickup3")) {
+			other.gameObject.SetActive (false);
+			pickCount += 1;
+			PlayerMovement.MovementBool();
+			Lesson3.showInventory();
+			
+		}
+		if (other.CompareTag("Pickup4")) {
+			other.gameObject.SetActive (false);
+			pickCount += 1;
+			PlayerMovement.MovementBool();
+			Lesson4.showInventory();
+			
+		}
+		if (other.CompareTag("Pickup5")) {
+			other.gameObject.SetActive (false);
+			pickCount += 1;
+			PlayerMovement.MovementBool();
+			Lesson5.showInventory();
+			
 		}
 	}
 }
