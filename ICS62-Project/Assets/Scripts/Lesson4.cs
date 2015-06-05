@@ -53,6 +53,8 @@ public class Lesson4 : MonoBehaviour {
 		}
 		if (GUI.Button (new Rect (350, 450, 150, 50), "Exit")) {
 			lesson4_show = false;
+			GameObject.FindGameObjectWithTag("Pickup").SetActive(true);
+			eventPlayerController.pickCount -= 1;
 			PlayerMovement.MovementBool ();
 		}
 	}

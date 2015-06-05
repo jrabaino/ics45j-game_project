@@ -3,7 +3,7 @@ using System.Collections;
 
 public class eventPlayerController : MonoBehaviour {
 
-	public int pickCount;
+	public static int pickCount;
 	public Texture imgTexture;
 	public Texture eighth;
 	public Texture quarter;
@@ -47,7 +47,14 @@ public class eventPlayerController : MonoBehaviour {
 
 	void Start () {
 		pickCount = 0;
+
+
 	}
+
+
+	//GameObject.FindGameObjectWithTag("Pickup").SetActive(false);
+	
+
 	
 	void OnGUI(){
 		GUI.Label (new Rect (10, 10, 200, 50), "Lessons collected: " + pickCount.ToString () + " /5");
@@ -95,7 +102,6 @@ public class eventPlayerController : MonoBehaviour {
 	{
 		if (other.CompareTag("Pickup")) {
 			other.gameObject.SetActive (false);
-
 			pickCount += 1;
 			PlayerMovement.MovementBool();
 			Lesson1.showInventory();
