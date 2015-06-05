@@ -52,12 +52,13 @@ public class Lesson1 : MonoBehaviour {
 
 	public static void LessonOnePlan(Texture eighth, Texture quarter, Texture half, Texture dotted_half, Texture whole)
 	{
+
 		questions.Add ("eighth");
 		questions.Add ("quarter");
 		questions.Add ("half");
 		questions.Add ("dotted_half");
 		questions.Add ("whole");
-		while (health > 0) {
+		while (health > 0 | player_hp >0) {
 
 			Lesson1Plan (eighth, quarter, half, dotted_half, whole);
 			break;
@@ -127,11 +128,11 @@ public class Lesson1 : MonoBehaviour {
 			}
 		}
 		//if (player_hp == 0) {
-			//plan = false;
-			///GameObject.FindGameObjectWithTag ("Player").transform.position = start_pos;
-			//GameObject.FindGameObjectWithTag ("Pickup").SetActive (true);
-			//eventPlayerController.pickCount -= 1;
 			//PlayerMovement.MovementBool ();
+			//GameObject.FindGameObjectWithTag ("Player").transform.position = start_pos;
+			//plan = false;
+			//eventPlayerController.pickCount = eventPlayerController.pickCount - 1;
+
 		
 		//}
 

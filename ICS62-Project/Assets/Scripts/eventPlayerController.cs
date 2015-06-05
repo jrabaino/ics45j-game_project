@@ -53,7 +53,6 @@ public class eventPlayerController : MonoBehaviour {
 
 
 	//GameObject.FindGameObjectWithTag("Pickup").SetActive(false);
-	
 
 	
 	void OnGUI(){
@@ -89,7 +88,7 @@ public class eventPlayerController : MonoBehaviour {
 			Lesson4.LessonFourPlan (clefA, clefB, clefC, clefD, clefE, clefF, clefG,clefMC);
 		}
 		if (Lesson5.lesson5_show) {
-			Lesson5.lesson5_text (imgTexture4);
+			Lesson5.lesson5_text (imgTexture5);
 		}
 		
 		if (Lesson5.lesson5_plan) {
